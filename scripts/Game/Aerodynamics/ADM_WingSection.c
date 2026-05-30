@@ -19,10 +19,10 @@ class ADM_WingSection
 	[Attribute("0", UIWidgets.EditBox, "Angle of wing relative to horizontal in degrees. (Make negative for anhedral)")]
 	float m_DihedralAngle;
 	
-	[Attribute(uiwidget: UIWidgets.GraphDialog, params: "180 10 -90 -5")]
+	[Attribute(uiwidget: UIWidgets.CurveDialog, params: "180 10 -90 -5")]
 	ref Curve m_vLiftCurve;
 	
-	[Attribute(uiwidget: UIWidgets.GraphDialog, params: "180 4 -90 -2")]
+	[Attribute(uiwidget: UIWidgets.CurveDialog, params: "180 4 -90 -2")]
 	ref Curve m_vDragCurve;
 	
 	[Attribute(UIWidgets.Object)]

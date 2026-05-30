@@ -102,7 +102,7 @@ class ADM_ControlSurface
 [BaseContainerProps()]
 class ADM_ControlSurfaceDragDevice: ADM_ControlSurface
 {
-	[Attribute(uiwidget: UIWidgets.GraphDialog, params: "90 4 0 -2")]
+	[Attribute(uiwidget: UIWidgets.CurveDialog, params: "90 4 0 -2")]
 	ref Curve m_vDragCurve;
 	
 	override float GetDeltaCD(ADM_WingSection curSection, float deflectionAngle, float angleOfAttack)
@@ -118,7 +118,7 @@ class ADM_ControlSurfaceDragDevice: ADM_ControlSurface
 [BaseContainerProps()]
 class ADM_ControlSurfaceFlap: ADM_ControlSurfaceDragDevice
 {
-	[Attribute(uiwidget: UIWidgets.GraphDialog, params: "90 4 0 -2")]
+	[Attribute(uiwidget: UIWidgets.CurveDialog, params: "90 4 0 -2")]
 	ref Curve m_vLiftCurve;
 	
 	override float GetDeltaCL(ADM_WingSection curSection, float deflectionAngle, float angleOfAttack)
